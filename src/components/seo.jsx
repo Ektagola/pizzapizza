@@ -1,28 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
 
-export default function Seo(props) {
-  const siteDetails = useStaticQuery(graphql`
-    query GetSiteMetadata {
-      site {
-        siteMetadata {
-          description
-          image
-          title
-          siteUrl
-        }
-      }
-    }
-  `)
-
-  const data = siteDetails.site.siteMetadata;
-
-  const title = props.title || data.title;
-  const description = props.description || data.description;
-  const image = new URL(props.image || data.image,data.siteUrl);
-  const url = new URL(props.path || '/', data.siteUrl);
-
+export default function Seo({title, description, url, image}) {
   return (
     <Helmet>
         <title>{title}</title>
