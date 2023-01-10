@@ -14,7 +14,7 @@ function App() {
       <Seo
         title="Order Pizza Online || Pizza Pizza"
         description="Order your favourites from Pizza Pizza & get 15% Off upto Rs.300 on minimum order of Rs.600. Experience Safe, Hygienic & Contactless Delivery.Trust in Every Bite. 30 Minutes Delivery. Cashless Payment Option. Delivery In 30 Minutes."
-        url="Company name"
+        url="pizzapizza.com"
         image={BannerImage}
       />
       <Banner />

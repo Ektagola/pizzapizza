@@ -8,6 +8,7 @@ export default function Seo({title, description, url, image}) {
         <meta name="description" content={description}/>
         <link rel="canonical" href={url}/>
         {image && <meta name="image" content={image} />}
+        <meta name="keywords" content="Online Pizza Ordering, Online Food App, Fast Delivering Food"/>
 
         {/* for facebook */}
         <meta property="og:url" content={url} />
