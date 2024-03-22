@@ -1,9 +1,10 @@
-import { Container, SimpleGrid, chakra, Stack, Box } from "@chakra-ui/react";
+import { Container, SimpleGrid, chakra, Stack, Box, Image } from "@chakra-ui/react";
 import React from "react";
 import { SiCodechef } from "react-icons/si";
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdFoodBank } from "react-icons/md";
 import { motion } from "framer-motion";
+import FullImage from "../assets/images/Download our mobile app.png"
 
 export default function Service() {
   const MotionChakra = motion(chakra.h1);
@@ -104,6 +105,19 @@ export default function Service() {
           </Stack>
         ))}
       </SimpleGrid>
+      <Image
+          src={FullImage}
+          alt="3 women looking at a laptop"
+          fit="cover"
+          w="full"
+          h={{
+            base: 64,
+            sm: "full",
+            md: "90vh",
+          }}
+          bg="white"
+          loading="lazy"
+        />
     </Container>
   );
 }
